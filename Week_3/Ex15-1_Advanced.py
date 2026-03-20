@@ -5,38 +5,38 @@ class Nhanvien:
         self.__heSoLuong = heSoLuong
     LUONG_MAX = 20000000
     
-    def tinhLuong(self):
+    def TinhLuong(self):
         return self.__luongCoBan * self.__heSoLuong
     
-    def tangLuong(self, luongTang):
+    def TangLuong(self, luongTang):
         luongMoi = self.tinhLuong() + luongTang
         if luongMoi > Nhanvien.LUONG_MAX:
             return False
         self.__luongCoBan += luongTang
         return True
     
-    def inTTin(self):
+    def InTTin(self):
         print(f"Tên: {self.tennhanvien}")
         print(f"Tăng lương: {self.tangluong}")
         print(f"Lương cơ bản: {self.__luongCoBan}")
         print(f"Hệ số lương: {self.__heSoLuong}")
         print(f"Lương: {self.tinhLuong()}")
         
-    def getName(self):
+    def GetName(self):
         return self.__tenNhanVien
     
-    def getSalary(self):
+    def GetSalary(self):
         return self.__luongCoBan
     
-    def getSC(self):
+    def GetSC(self):
         return self.__heSoLuong
     
     
-    def setName(self, name):
+    def SetName(self, name):
         self.__tenNhanVien = name
         
-    def setSalary(self, salary):
+    def SetSalary(self, salary):
         self.__luongCoBan = salary
     
-    def setSC(self, SC):
+    def SetSC(self, SC):
         self.__heSoLuong = SC

@@ -17,7 +17,7 @@ print("+  --  --  --  --  +" + "  --  --  --  --  +" * 3)
 #-------------------------------------------------------------------------------------------------------------------------------------
 #PS: The program can print the number of rows and columns based on the parameters.
 
-def a():
+def Rec():
     r = int(input("Enter the row: "))
     c = int(input("Enter the collum: "))
     for i in range(r):
@@ -25,4 +25,3 @@ def a():
         for j in range(4):
             print("|                  |" + "                  |" * (c - 1) + "\n")
     print("+  --  --  --  --  +" + "  --  --  --  --  +" * (c - 1))
-a()

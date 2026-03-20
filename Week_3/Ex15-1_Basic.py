@@ -6,13 +6,13 @@ class Point:
         self.y = y
 
 
-class circle:
+class Circle:
     def __init__(self, center, radius):
         self.center = center
         self.radius = radius
         
 
-class rectangle:
+class Rectangle:
     def __init__(self, point_1, point_2, point_3, point_4):
         self.point_1 = point_1
         self.point_2 = point_2
@@ -20,7 +20,7 @@ class rectangle:
         self.point_4 = point_4
         
 
-def point_in_circle(circle, point):
+def Point_in_circle(circle, point):
     x = int(input("x: "))
     y = int(input("y: "))
     p = Point(x, y)
@@ -29,7 +29,7 @@ def point_in_circle(circle, point):
     return False
 
 
-def rect_in_circle(circle, rectangle):
+def Rect_in_circle(circle, rectangle):
     if math.sqrt(math.pow(rectangle.point_1.x - circle.center.x, 2) + math.pow(rectangle.point_1.y - circle.center.y, 2)) == circle.radius:
         index += 1
     if math.sqrt(math.pow(rectangle.point_2.x - circle.center.x, 2) + math.pow(rectangle.point_2.y - circle.center.y, 2)) == circle.radius:
@@ -43,7 +43,7 @@ def rect_in_circle(circle, rectangle):
     return False
 
 
-def rect_circle_overlap(circle, rectangle):
+def Rect_circle_overlap(circle, rectangle):
     if math.sqrt(math.pow(rectangle.point_1.x - circle.center.x, 2) + math.pow(rectangle.point_1.y - circle.center.y, 2)) <= circle.radius:
         index += 1
     if math.sqrt(math.pow(rectangle.point_2.x - circle.center.x, 2) + math.pow(rectangle.point_2.y - circle.center.y, 2)) <= circle.radius:
@@ -58,9 +58,9 @@ def rect_circle_overlap(circle, rectangle):
 
 
 center_point = Point(150, 100)
-circle_1 = circle(center_point, 75)
+circle_1 = Circle(center_point, 75)
 p1 = Point(100, 50)
 p2 = Point(200, 50)
 p3 = Point(200, 105)
 p4 = Point(100, 150)
-rect = rectangle(p1, p2, p3, p4)
+rect = Rectangle(p1, p2, p3, p4)
