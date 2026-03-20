@@ -30,6 +30,7 @@ def Point_in_circle(circle, point):
 
 
 def Rect_in_circle(circle, rectangle):
+    index = 0
     if math.sqrt(math.pow(rectangle.point_1.x - circle.center.x, 2) + math.pow(rectangle.point_1.y - circle.center.y, 2)) == circle.radius:
         index += 1
     if math.sqrt(math.pow(rectangle.point_2.x - circle.center.x, 2) + math.pow(rectangle.point_2.y - circle.center.y, 2)) == circle.radius:
