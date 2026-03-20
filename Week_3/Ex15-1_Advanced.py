@@ -16,7 +16,8 @@ class Nhanvien:
         return True
     
     def inTTin(self):
-        print(f"Tên nhân viên: {self.__tenNhanVien}")
+        print(f"Tên: {self.tennhanvien}")
+        print(f"Tăng lương: {self.tangluong}")
         print(f"Lương cơ bản: {self.__luongCoBan}")
         print(f"Hệ số lương: {self.__heSoLuong}")
         print(f"Lương: {self.tinhLuong()}")
