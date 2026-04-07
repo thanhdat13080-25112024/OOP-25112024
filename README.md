@@ -7,25 +7,35 @@ Do Dinh Thanh Dat
 
 ```
 OOP-25112024/
-│
-├── Week_1/
-│   └── HelloWorld.py
-│
-├── Week_2/
-│   ├── Ex1-2.py
-│   ├── Ex2-2.py
-│   ├── Ex3-3.py
-│   └── Ex5-1.py
-│
-├── Week_3/
-│   ├── Ex15-1_Basic.py
-│   ├── Ex15-1_Advanced.py
-│   ├── Manage_SieuNhanList.py
-│   ├── Point_2D_Geometry.py
-│   └── SieuNhan.py
-│
-├── Week_4/
-│   └── Line_Segment.py
-│
-└── .gitignore
+├── README.md
+├── Week_1
+│   └── HelloWorld.py
+├── Week_2
+│   ├── Ex1_2.py
+│   ├── Ex2_2.py
+│   ├── Ex3_3.py
+│   └── Ex5_1.py
+├── Week_3
+│   ├── Ex15_1_Advanced.py
+│   ├── Ex15_1_Basic.py
+│   ├── Manage_SieuNhanList.py
+│   ├── Point_2D_Geometry.py
+│   ├── SieuNhan.py
+│   └── __init__.py
+├── Week_4
+│   └── Line_Segment.py
+├── Week_5
+│   ├── BT1.py
+│   ├── BT2.py
+│   ├── BT3.py
+│   ├── BT4.py
+│   └── BT_NC.py
+├── Week_6
+│   ├── BT1.py
+│   ├── BT2.py
+│   └── BT3.py
+└── temp.txt
+
+7 directories, 22 files
+
 ```
